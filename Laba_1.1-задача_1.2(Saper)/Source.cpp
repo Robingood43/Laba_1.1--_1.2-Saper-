@@ -6,12 +6,12 @@ int main()
 	int counter = 0;
 	while (true)
 	{
-		std::cin >> m >> n;// вводим границы
+		std::cin >> m >> n;// ГўГўГ®Г¤ГЁГ¬ ГЈГ°Г Г­ГЁГ¶Г»
 		switch (m || n)
 			case 0: break;
-		counter++;//какой по счету случай
+		counter++;//ГЄГ ГЄГ®Г© ГЇГ® Г±Г·ГҐГІГі Г±Г«ГіГ·Г Г©
 
-		int field[5][5] = { 0 };
+		int field[100][100] = { 0 };
 		for (int i = 1; i < m + 1; i++)
 			for (int j = 1; j < n + 1; j++)
 			{
@@ -40,9 +40,9 @@ int main()
 			{
 				switch (field[i][j])
 				{
-				case -1: std::cout << '*'; break;// если мина (*) рисуем мину
+				case -1: std::cout << '*'; break;// ГҐГ±Г«ГЁ Г¬ГЁГ­Г  (*) Г°ГЁГ±ГіГҐГ¬ Г¬ГЁГ­Гі
 				default:
-					std::cout << field[i][j];// иначе рисуем цифру равну кол-ву мин рядом
+					std::cout << field[i][j];// ГЁГ­Г Г·ГҐ Г°ГЁГ±ГіГҐГ¬ Г¶ГЁГґГ°Гі Г°Г ГўГ­Гі ГЄГ®Г«-ГўГі Г¬ГЁГ­ Г°ГїГ¤Г®Г¬
 					break;
 				}
 			}
